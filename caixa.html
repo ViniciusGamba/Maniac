@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    Digite o valor divisivel por 10:
+    <input type="text" id="valor">
+    <button onclick="sacar();"> sacar </button>
+    <div class="div1" id="div1"> </div>
+
+</body>
+<script>
+    function sacar()
+{
+    V = valor.value;
+    V = parseInt(V); // CONVERSÃO PARA INTEIRO
+    if (V%10 == 0)
+    {
+        quantidade = V / 10; 
+        // estrutura de repetição:
+        for (x=1;x<=quantidade;x++)
+        {
+            div1.innerHTML += " <br> <img src = 'nota10.jpg' width='100px'>";
+        }
+        div1.innerHTML += "<br> voolte sempre";
+    }
+    else
+    {
+        alert("Valor Imcorreto");
+    }
+}
+</script>
+</html>

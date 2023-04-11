@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixa Eletrônico</title>
+</head>
+<body>
+    
+   <button onclick="Maior();">MAIOR VALOR </button>
+   <button onclick="Menor();">MENOR VALOR </button>
+   <button onclick="Media();">MÉDIA VALOR </button>
+
+</body>
+<script>
+
+    alturas =  [0,0,0,0,0]; 
+    for(cont=0;cont<=4;cont++)
+     {
+        n = prompt("Digite um número " + (cont+1) );
+        n = parseInt(n); // Convertemos para inteiro 
+        alturas[cont] = n;
+        
+     } 
+
+     function Maior ()
+    {
+    maior = alturas[0];    
+    for (cont=o;cont<=4;cont++) // cont vai de 0 até 4
+
+        {
+            if (maior < altura[cont])
+            {
+                maior = alturas[cont];
+            }
+        }
+
+        alert (Maior); 
+    }   
+
+    function Menor ()
+    {
+    menor = alturas[0];    
+    for (cont=o;cont<=4;cont++) // cont vai de 0 até 4
+
+        {
+            if (menor > altura[cont])
+            {
+                menor = alturas[cont];
+            }
+        }
+
+        alert (Menor); 
+    }  
+    
+        function Media() 
+
+        {
+            soma = 0;
+            media =0;
+            for (cont=0;cont<=4;cont++)
+            {
+                soma = soma + alturas [cont];
+            }
+            Mmedia = soma / 5
+            alert("A MEDIA É " + media )
+
+        }
+</script>
+
+</html>
