@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .minha_div
+        {
+            background-color: yellow;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            align-content: center;
+        }
+    </style>
+</head>
+<body>
+    Clique neste botão 
+    <br>
+    <button onclick="Trocar_cor();"> 
+    <img src="pngwing.com.png" width="100px">
+    <br>
+    <b> Exemplo</b>
+    </button>
+
+    <div class="minha_div" id="minha_div"><!--id=para java entender e class para html entender-->
+        <!--Texto dentro da div-->
+    </div>
+</body>
+<script>
+    contador = 0
+    function Trocar_cor()
+    {
+        minha_div.style.backgroundColor = "green"// troca a cor apertando encima da imagem
+        minha_div.style.borderStyle = "solid"//tipo de borda 
+        minha_div.style.borderColor = "red"// a cor da borda
+        contador = contador + 1
+        minha_div.innerHTML = contador 
+    }
+</script>
+</html>
